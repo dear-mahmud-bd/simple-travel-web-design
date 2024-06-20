@@ -1,0 +1,84 @@
+/* Shared Css */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+* {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin: 0 auto;
+}
+
+
+/* ################# Header Part CSS ################# */
+
+/* nav part */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav-title > span{
+    color: #FF5400;
+}
+nav > ul {
+    display: flex;
+}  
+nav li {
+    list-style: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+nav li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.05rem;
+}
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* banner part */
+
+
+
+
+
+
+/* responsive design */
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /* nav part */
+    .nav-link{
+        display: none;
+    }
+    .nav-toggle {
+        display: inline;
+    }
+    /* banner part */
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
