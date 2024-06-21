@@ -68,7 +68,7 @@ nav li a {
     margin-bottom: 20px;
 }
 .banner-content p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 20px;
 }
 .search-bar-container {
@@ -248,6 +248,60 @@ nav li a {
     grid-column: span 2; 
 }
 
+/* Extra Part CSS */
+.client-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-header{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.client-description{
+    margin: 0;
+    text-align: center;
+}
+.reviewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.client-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.client-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.client-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
 /* Form Part CSS */
 .form-container {
     display: flex;
@@ -350,6 +404,9 @@ nav li a {
     font-weight: 700;
     margin: 0;
 }
+.footer-title > span{
+    color: #FF5400;
+}
 .footer-description{
     margin: 10px 15%;
 }
@@ -419,6 +476,15 @@ nav li a {
         grid-column: span 1; 
     }
 
+    /* Extra Part CSS */
+    .reviewer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .client-card {
+        width: 100%;
+    }
+
     /* Form Part CSS */
     .form-container{
         flex-direction: column;
@@ -447,6 +513,15 @@ nav li a {
     }
     .nav-toggle {
         display: inline;
+    }
+
+    /* Extra Part CSS */
+    .reviewer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .client-card {
+        width: 100%;
     }
 }
 
