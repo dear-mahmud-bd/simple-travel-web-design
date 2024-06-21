@@ -41,6 +41,9 @@ nav li a {
     color: #424247;
     font-size: 1.05rem;
 }
+nav li a span{
+    color: #FF5400;
+}
 .nav-toggle {
     display: none;
     background: none;
