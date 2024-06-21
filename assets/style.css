@@ -11,6 +11,7 @@
 }
 
 
+
 /* ################# Header Part CSS ################# */
 
 /* nav part */
@@ -24,6 +25,7 @@ nav {
     align-items: center;
     font-size: 3rem;
     font-weight: 700;
+    margin: 20px 0;
 }
 .nav-title > span{
     color: #FF5400;
@@ -49,13 +51,64 @@ nav li a {
 }
 
 /* banner part */
+.banner {
+    height: 500px;
+    background: linear-gradient(to bottom, #080212b3, #07021100), url('/assets/images/group13.png') center; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.banner-content {
+    max-width: 800px;
+    padding: 20px;
+}
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.search-bar-container {
+    display: flex;
+    background: #ffffff59;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0 2px 4px #00000033;
+}
+.search-input, .search-select, .search-button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+}
+.search-button svg {
+    margin-right: 5px;
+}
 
 
 
+/* ################# Main Part CSS ################# */
 
 
-
-/* responsive design */
+/* ################# Responsive Design ################# */
 @media (max-width: 576px) {
     .container {
         max-width: 540px;
@@ -69,6 +122,19 @@ nav li a {
         display: inline;
     }
     /* banner part */
+    .banner-content h1{
+        margin-bottom: 8px;
+    }
+    .banner-content p{
+        margin-bottom: 8px;
+    }
+    .search-bar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-button {
+        padding: 8px 0; 
+    }
 }
 
 @media (max-width: 768px) {
